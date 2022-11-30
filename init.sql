@@ -10,14 +10,15 @@ CREATE TABLE "User" (
   PRIMARY KEY ("id")
 );
 
-CREATE TABLE "Verbindungen" (
+CREATE TABLE "Connection" (
   "id" int,
   "user_id" int,
   "product_id" varchar,
-  "amount" int,
+  "recycled" boolean,
+  "recycled_date" date,
   PRIMARY KEY ("id")
 );
 
-ALTER TABLE "Verbindungen" ADD FOREIGN KEY ("user_id") REFERENCES "User" ("id");
+ALTER TABLE "Connection" ADD FOREIGN KEY ("user_id") REFERENCES "User" ("id");
 
-ALTER TABLE "Verbindungen" ADD FOREIGN KEY ("product_id") REFERENCES "Product" ("id");
+ALTER TABLE "Connection" ADD FOREIGN KEY ("product_id") REFERENCES "Product" ("id");
