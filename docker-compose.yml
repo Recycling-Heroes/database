@@ -1,5 +1,5 @@
 # Use postgres/example user/password credentials
-version: '3.1'
+version: '3.7'
 
 services:
 
@@ -8,19 +8,18 @@ services:
     image: postgres
     ports:
       - "5432:5432"
-    environment:
-
+#    environment:
 #      POSTGRES_USER: "${POSTGRES_USER}"
 #      POSTGRES_PASSWORD: "${POSTGRES_PASSWORD}"
 #      POSTGRES_DB: "${POSTGRES_DB}"
 #      PGDATA: /var/lib/postgresql/data
-      POSTGRES_USER: root
-      POSTGRES_PASSWORD: root
-      POSTGRES_DB: recycling_heroes
+#      POSTGRES_USER: root
+#      POSTGRES_PASSWORD: root
+#      POSTGRES_DB: recycling_heroes
     env_file:
-      - "init.env"
+      - ./init.env
     volumes:
       - postgres-data:/var/lib/postgresql/data
-
+      - ./init.sql:/docker-entrypoint-initdb.d/init.sql
 volumes:
   postgres-data:
