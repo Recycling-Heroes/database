@@ -1,8 +1,3 @@
-CREATE DATABASE recycling_heroes;
-CREATE USER root WITH PASSWORD 'root';
-GRANT ALL PRIVILEGES ON DATABASE recycling_heroes TO root;
-
-
 CREATE TABLE "product" (
   "id" varchar,
   "content" json,
