@@ -1,16 +1,21 @@
-CREATE TABLE "Product" (
+CREATE DATABASE recycling_heroes;
+CREATE USER root WITH PASSWORD 'root';
+GRANT ALL PRIVILEGES ON DATABASE recycling_heroes TO root;
+
+
+CREATE TABLE "product" (
   "id" varchar,
   "content" json,
   PRIMARY KEY ("id")
 );
 
-CREATE TABLE "User" (
+CREATE TABLE "user" (
   "id" int,
   "name" varchar,
   PRIMARY KEY ("id")
 );
 
-CREATE TABLE "Connection" (
+CREATE TABLE "connection" (
   "id" int,
   "user_id" int,
   "product_id" varchar,
@@ -19,6 +24,6 @@ CREATE TABLE "Connection" (
   PRIMARY KEY ("id")
 );
 
-ALTER TABLE "Connection" ADD FOREIGN KEY ("user_id") REFERENCES "User" ("id");
+ALTER TABLE "connection" ADD FOREIGN KEY ("user_id") REFERENCES "user" ("id");
 
-ALTER TABLE "Connection" ADD FOREIGN KEY ("product_id") REFERENCES "Product" ("id");
+ALTER TABLE "connection" ADD FOREIGN KEY ("product_id") REFERENCES "product" ("id");
