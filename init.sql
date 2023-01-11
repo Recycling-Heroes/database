@@ -22,3 +22,6 @@ CREATE TABLE "connection" (
 ALTER TABLE "connection" ADD FOREIGN KEY ("user_id") REFERENCES "user" ("id");
 
 ALTER TABLE "connection" ADD FOREIGN KEY ("product_id") REFERENCES "product" ("id");
+
+COPY product FROM '/TestData/testdata.csv' DELIMITER ',' CSV;
+

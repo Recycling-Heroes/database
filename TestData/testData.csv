@@ -1,0 +1,15 @@
+id,name,content
+1,iPhone 13 Pro Max 128 GB graphik,'{"Display":"6.7\"", 2778x1284 Pixel, 16 Mio. Farben, OLED, kapazitiver Touchscreen, Aussparung, HDR (Dolby Vision), 120Hz Aktualisierungsrate",
+                                   "Kamera hinten":"12.0MP, f/​1.5, Phasenvergleich-AF (Dual-Pixel), OIS, Dual-LED-Blitz, Videos @2160p/​60fps (Kamera 1); 12.0MP, f/​2.8, Phasenvergleich-AF, OIS, Teleobjektiv (Kamera 2); 12.0MP, f/​1.8, Phasenvergleich-AF, Weitwinkelobjektiv (Kamera 3); ToF (Kamera 4)",
+                                   "Kamera vorne":"12.0MP, f/​2.2, Videos @2160p/​60fps",
+                                   "Schnittstellen":"Lightning, Wi-Fi 6 (WLAN 802.11a/​b/​g/​n/​ac/​ax), Bluetooth 5.0, NFC, UWB",
+                                   "Sensoren:"Beschleunigungssensor, Gyroskop, Annäherungssensor, Lichtsensor, Kompass, Barometer, Gesichtsscanner (3D, Infrarot)",
+                                   "SoC":"Apple A15 Bionic, 64bit",
+                                   "CPU":"2x 3.24GHz Avalanche + 4x 2.01GHz Blizzard"
+                                   "GPU":"Apple A15 5-Core-GPU",
+                                   "RAM":"6GB",
+                                   "Speicher":"128GB",
+                                   "Akku":"4373mAh, fest verbaut, kabelloses Laden",
+                                   "Gehäusematerial","Glas (Rückseite), Metall (Rahmen)",
+                                   "Abmessungen":"160.8x78.1x7.7mm",
+                                   "Gewicht":"238g"}'
