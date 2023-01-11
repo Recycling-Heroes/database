@@ -5,7 +5,7 @@ services:
 
   db:
     container_name: DP_DB
-    image: postgres
+    image: postgres:15
     ports:
       - "5432:5432"
 #    environment:
