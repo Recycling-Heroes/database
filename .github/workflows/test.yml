@@ -28,4 +28,4 @@ jobs:
         with:
           context: .
           push: true
-          tags: Recycling-Heroes/database:latest
+          tags: recycling-heroes/database:latest
