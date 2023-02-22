@@ -9,7 +9,7 @@ services:
     ports:
       - "5432:5432"
     env_file:
-      - ./init.env
+      - ${ENV_FILE:-./init.env}
     volumes:
       - postgres-data:/var/lib/postgresql/data
       - ./init.sql:/docker-entrypoint-initdb.d/init.sql
