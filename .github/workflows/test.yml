@@ -28,4 +28,4 @@ jobs:
         with:
           context: .
           push: true
-          tags: recycling-heroes/database:latest
+          tags: ghcr.io/${{ github.repository }}:latest
