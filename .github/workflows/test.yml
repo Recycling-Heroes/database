@@ -22,4 +22,4 @@ jobs:
         with:
           context: .
           push: true
-          tags: docker.pkg.github.com/${{ github.repository }}/database:${{ github.sha }}
+          tags: catew/database:latest
