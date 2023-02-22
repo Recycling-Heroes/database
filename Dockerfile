@@ -1,5 +1,4 @@
-FROM postgres:15
-
+FROM postgres:15 AS builder
 COPY init.sql /docker-entrypoint-initdb.d/
 COPY testData.csv /docker-entrypoint-initdb.d/
 
